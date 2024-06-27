@@ -23,13 +23,21 @@ Describe the purpose and goals of your finance dashboard project. Highlight its 
 ### Pages Included:
 
 - **Home**: Overview and introduction to the dashboard.
-  
+  ![landing page](https://github.com/PKhetan0208/Finance-Dashboard/blob/main/Images/Landing%20Page.png)
 - **About**: Information about the project and its creators.
+  ![about](https://github.com/PKhetan0208/Finance-Dashboard/blob/main/Images/About.png)
 - **News**: Latest financial news and updates.
+  ![news](https://github.com/PKhetan0208/Finance-Dashboard/blob/main/Images/News.png)
 - **Stock Analysis**: Tools for analyzing stock data and trends.
+  ![stock1](https://github.com/PKhetan0208/Finance-Dashboard/blob/main/Images/Stock%20Analysis_1.png)
+  ![stock2](https://github.com/PKhetan0208/Finance-Dashboard/blob/main/Images/Stock%20Analysis_2.png)
 - **Monte Carlo Simulator**: Simulation tool for financial scenarios.
+  ![montecarlo](https://github.com/PKhetan0208/Finance-Dashboard/blob/main/Images/MonteCarlo.png)
 - **Financial Analysis**: Detailed analysis tools and visualizations.
+  ![fin1](https://github.com/PKhetan0208/Finance-Dashboard/blob/main/Images/Financial%20Analysis_1.png)
+  ![fin2](https://github.com/PKhetan0208/Finance-Dashboard/blob/main/Images/Financial%20Analysis_2.png)
 - **Community Forum**: Platform for users to discuss financial topics.
+  ![forum](https://github.com/PKhetan0208/Finance-Dashboard/blob/main/Images/Community%20Forum.png)
 
 ### Technologies Used:
 
