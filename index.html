@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Page with Video Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            margin-top: 125px;
+            height: 100vh;
+            background-color: #000;
+            overflow: hidden;
+        }
+        nav {
+            position: fixed;
+            top: 5%;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000; /* Ensure navigation bar is on top */
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+        .content {
+            position: relative;
+            
+            z-index: 1;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            opacity: 0; /* Initially hidden */
+            animation: fadeIn 3s forwards; /* Animation to fade in content */
+            margin-top: 10px; /* Space from top to avoid overlapping with navbar */
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay loop muted>
+        <source src="https://cdn.pixabay.com/video/2024/03/15/204292-923909617_small.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="content" id="typed-text">
+        <h1>Welcome<span id="typed-text-content"></span></h1>
+        <p>This is your finance dashboard.</p>
+    </div>
+
+    <script>
+        const typedText = document.getElementById('typed-text-content');
+        const textToType = ' to Eagle Finances'; // Text to type out after "Welcome"
+        let index = 0;
+
+        function typeWriter() {
+            if (index < textToType.length) {
+                typedText.textContent += textToType.charAt(index);
+                index++;
+                setTimeout(typeWriter, 200); // Adjust typing speed (milliseconds)
+            }
+        }
+
+        setTimeout(typeWriter, 2000); // Delay before starting typing animation
+    </script>
+</body>
+</html>
